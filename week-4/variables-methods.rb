@@ -24,14 +24,23 @@ puts 'Your favorite number is great! I went ahead and added one to it so it is e
 
 ## Questions
 # How do you define a local variable?
+# To define a local variable, the first letter should be capitalized or should begin with an underscore. Then you set it equal to the value you want it assume.
 #
 # How do you define a method?
+# A method is defined by the following syntax: def [method-name]([arguement(s)]).
+
 # What is the difference between a local variable and a method?
+# A local variable is defined within a method and can be called within that method. A method is program. 
+
 # How do you run a ruby program from the command line?
+# You can run a program from the command line by entering: ruby [file-name.rb]
+#
 # How do you run an RSpec file from the command line?
+# Make sure that you are in the same directory as the the rspec file and your code file. Type in "rspec [rspec file name]". 
+#
 # What was confusing about this material? What made sense?
-
-
+# For the more complicated methods, it was hard for me to remember when certain things needed to be converted to a string or to a number. 
+#
 
 
 # Challenge URLS:
