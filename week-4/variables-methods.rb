@@ -21,3 +21,26 @@ fav_number1 = fav_number.to_i + 1
 
 puts 'Your favorite number is great! I went ahead and added one to it so it is even bigger and better! This is what it is now: ' + fav_number1.to_s + '.'
 
+
+## Questions
+# How do you define a local variable?
+#
+# How do you define a method?
+# What is the difference between a local variable and a method?
+# How do you run a ruby program from the command line?
+# How do you run an RSpec file from the command line?
+# What was confusing about this material? What made sense?
+
+
+
+
+# Challenge URLS:
+# Define Method
+# https://github.com/lydiamnash/phase-0/blob/master/week-4/define-method/my_solution.rb
+
+# 4.3.1 (Address)
+# https://github.com/lydiamnash/phase-0/blob/master/week-4/address/my_solution.rb
+
+# 4.3.2 (Math)
+# https://github.com/lydiamnash/phase-0/blob/master/week-4/math/my_solution.rb
+
