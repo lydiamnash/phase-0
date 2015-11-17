@@ -1,8 +1,8 @@
 Main site index wireframe:
-!(Site Index Wireframe)(imgs/wireframe-index.png)
+![Site Index Wireframe](imgs/wireframe-index.png)
 
 Blog index wireframe:
-!(Blog Index Wireframe)(imgs/wireframe-blog-index.png)
+![Blog Index Wireframe](imgs/wireframe-blog-index.png)
 
 ## What is a wireframe?
 A wireframe is a visualization of the main structure, functionality, and layout of a web page without including any content or design elements such as font or colors. This allows designers and engineers an opportunity to assess a website's layout and funcitonality at its simplest form without design distractions.
