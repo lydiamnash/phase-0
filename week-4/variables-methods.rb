@@ -1,7 +1,7 @@
+
 # Mini Challenges - Full name greeting
 
 puts 'Hello there, what\'s your first name?'
-
 first_name = gets.chomp
 puts 'Your name is ' + first_name + '? What a lovely name! What is your middle name?'
 
@@ -15,7 +15,6 @@ puts 'Well, then, hello ' + first_name + ' ' + middle_name + ' ' + last_name + '
 # Mini Challenge - Bigger, better favorite number
 
 puts 'Hi, what is your favorite number? (Please enter only digits!)'
-
 fav_number = gets.chomp
 fav_number1 = fav_number.to_i + 1
 
@@ -24,7 +23,7 @@ puts 'Your favorite number is great! I went ahead and added one to it so it is e
 
 ## Questions
 # How do you define a local variable?
-# To define a local variable, the first letter should be capitalized or should begin with an underscore. Then you set it equal to the value you want it assume.
+# To define a local variable, the first letter should be capitalized or should begin with an underscore. Then you set it equal to the value you want it to be.
 #
 # How do you define a method?
 # A method is defined by the following syntax: def [method-name]([arguement(s)]).
@@ -36,10 +35,10 @@ puts 'Your favorite number is great! I went ahead and added one to it so it is e
 # You can run a program from the command line by entering: ruby [file-name.rb]
 #
 # How do you run an RSpec file from the command line?
-# Make sure that you are in the same directory as the the rspec file and your code file. Type in "rspec [rspec file name]". 
+# Make sure that you are in the same directory as the the rspec file and your code file and make sure the path names are correctly referenced in the rspec file. Type in "rspec [rspec file name]". 
 #
 # What was confusing about this material? What made sense?
-# For the more complicated methods, it was hard for me to remember when certain things needed to be converted to a string or to a number. 
+# For the more complicated methods, it was hard for me to remember when certain things needed to be converted to a string or to a number. This exercise was good practice in refreshing and solidifying these concepts, though.
 #
 
 
