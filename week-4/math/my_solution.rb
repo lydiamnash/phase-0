@@ -20,3 +20,4 @@ end
 def divide(num_1, num_2)
  return num_1.to_f / num_2.to_f
 end
+
