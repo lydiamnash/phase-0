@@ -1,3 +1,4 @@
+=begin
 # Method to create a list
 # input: string of items separated by spaces (example: "carrots apples cereal pizza")
 # steps: 
@@ -6,13 +7,6 @@
   # set default quantity
   # print the list to the console [can you use one of your other methods here?] VISIT THIS AT THE END
 # output: hash with the item name and the default value 1
-
-def create_a_list(items)
-  grocery_hash = Hash.new
-  items.split.each { |x| grocery_hash[x] = 1} 
-  return grocery_hash
-end 
-puts create_a_list("carrots apples bananas oranges milk")
 
 # Method to add an item to a list
 # input: item name and optional quantity (enters default value if not given)
@@ -24,10 +18,6 @@ puts create_a_list("carrots apples bananas oranges milk")
 #def add_item(list, item, quantity=1)
  # list = 
 #end
-things_from_safeway = "carrots apples bananas oranges milk"
-safeway_list = create_a_list(things_from_safeway)
-#puts add_item(safeway_list, item)
-
 
 
 # Method to remove an item from the list
@@ -37,17 +27,6 @@ safeway_list = create_a_list(things_from_safeway)
   # run the check method
   # remove item from list
 # output: updated grocery list hash
-#puts remove_item(safeway_list, "milk")
-
-def remove_item(safeway_list, items)
-  safeway_list.delete(items)
-  return safeway_list
-end
-  
-
-puts remove_item(safeway_list, "milk")
-
-# We see that the list prints out twice (once with the milk, once without), but weren't sure how to fix
   
 # Method to update the quantity of an item
 # input: item name and the additional amount of the item you want on the list in integer form
@@ -55,24 +34,67 @@ puts remove_item(safeway_list, "milk")
   # get item name and additional quantity of item
   # run the check method
 # output: updated grocery list hash
- # puts update_list(safeway_list, "bananas", 12)
 
 # Method to print a list and make it look pretty
 # input: grocery list hash
 # steps: 
-  # No steps now [stretch goal: alphabetize the list, remove the square brackets]
+  # print [stretch goal: alphabetize the list]
 # output: two column list with items on the left and quantity on the right
-#print_list(safeway_list)
 
-# Method that determines whether the item is in the list and if it isn't, it prints out an error message 
-# input: item name and the list hash 
-# steps: 
-  # get item name
-  # IF the item name does not exist in the hash, puts "This item is not in your grocery list!"
-# output: the error message or nothing
-#puts check_list(safeway_list, "apple") # => should return either an error or nothing
+=end
+
+new_list = Hash.new
+
+def new_item(list, item, quantity)
+  list[item] = quantity
+end
+
+def remove_item(list, item)
+  list.delete(item) if list[item]
+end
+
+def update_item(list, item, quantity)
+  list[item] = quantity if list[item]
+end
+
+def print_list(list)
+  puts "Grocery List:"
+  list.each do |item, quantity|
+    puts "#{quantity} #{item.capitalize}"
+  end
+end
+
+my_list = new_list
+new_item(my_list, "lemonade", 2)
+new_item(my_list, "tomatoes", 3)
+new_item(my_list, "onions", 1)
+new_item(my_list, "ice cream", 4)
+remove_item(my_list, "lemonade")
+update_item(my_list, "ice cream", 1)
+print_list(my_list)
 
 
+# 5. Reflection
 
+=begin
+What did you learn about pseudocode from working on this challenge?
+Pseudocode is most helpful when it is detailed, but not overly detailed.
+
+What are the tradeoffs of using Arrays and Hashes for this challenge?
+We decided to go with a hash because we knew we would want to be able to capture the number of items (or keys) that we wanted to get at the store.
+
+What does a method return?
+A method returns the last value within it.
+
+What kind of things can you pass into methods as arguments?
+anything - hashes, arrays, numbers, strings.
+
+How can you pass information between methods?
+By putting the information in parenthesis, separated by commas.
+
+What concepts were solidified in this challenge, and what concepts are still confusing?
+This challenge was difficult for my pair and me. We were able to think through the logic, but had issues with the syntax which made me realize I need to spend more time reviewing hashes!
+
+=end
 
 
