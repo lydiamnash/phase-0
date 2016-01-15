@@ -22,3 +22,8 @@ end
 
 
 # Reflection
+# Release 1
+# What are these methods doing?
+
+# How are they modifying or returning the value of instance variables?
+
