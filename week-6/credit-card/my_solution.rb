@@ -77,8 +77,6 @@ end
 
 # # DRIVER CODE
 # number = 4563960122001999
-# good = 4408041234567901
-# bad = 4408041234567906
 # card = CreditCard.new(number)
 # card.double
 # card.check_card
