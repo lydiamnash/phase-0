@@ -134,21 +134,14 @@ function countVotes(votes) {
 function findWinner(voteCount) {
   for (var office in voteCount) {
     
-    // Push all number of votes into an array
+    // Push all number of votes into an array and sort
     var office_array = [] 
     for (var x in voteCount[office]) {
-      office_array.push(voteCount[office][x]);
+      office_array.push([x,voteCount[office][x]]);
     };
+    office_array.sort(function(a, b) {return b[1] - a[1]})
 
-    // Find the highest number of votes
-    var office_winning_num = Math.max(...office_array);
-
-    // use the max num to map back to the property it's associated with
-    for (var y in voteCount[office]) {
-      if (voteCount[office][y] === office_winning_num) {
-        officers[office] = y;
-      };
-    };
+    officers[office] = office_array[0][0];
   };
 };
 
