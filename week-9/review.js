@@ -29,15 +29,15 @@ function deleteItem(item) {
 };
 
 function changeQuantity(item,quantity) {
-  groceryList[item] = quantity;
+  if (groceryList.hasOwnProperty(item)) {
+    groceryList[item] = quantity;
+  };
 };
 
 function printList(list) {
-  var output = '';
-  for (var property in list) {
-    output += property + ': ' + list[property]+ '\n';
-  }
-  console.log(output);
+  for (var item in list) {
+    console.log(item + ': ' + list[item]);
+  };
 };
 
 
